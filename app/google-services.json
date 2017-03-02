@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1096619868587",
+    "firebase_url": "https://fitness-app-ada96.firebaseio.com",
+    "project_id": "fitness-app-ada96",
+    "storage_bucket": "fitness-app-ada96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096619868587:android:80917de82383f26f",
+        "android_client_info": {
+          "package_name": "canyons.fitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096619868587-4v8f8bdd9if2qlccv5sp9p38v5tnre6g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "canyons.fitness",
+            "certificate_hash": "c2eba7012018f62da374fb38c3843122a183420d"
+          }
+        },
+        {
+          "client_id": "1096619868587-cj3um7ap4dig712fpkpk2lbra5rs7hsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVMJmx7nWxlY6SjXMTaxWjJnrsP3zdCEg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096619868587-cj3um7ap4dig712fpkpk2lbra5rs7hsi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
