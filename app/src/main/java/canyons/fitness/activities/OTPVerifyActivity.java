@@ -1,4 +1,4 @@
-package canyons.fitness;
+package canyons.fitness.activities;
 
 import android.Manifest;
 import android.content.Intent;
@@ -25,6 +25,7 @@ import com.msg91.sendotp.library.SendOtpVerification;
 import com.msg91.sendotp.library.Verification;
 import com.msg91.sendotp.library.VerificationListener;
 
+import canyons.fitness.R;
 import canyons.fitness.utilities.Constants;
 import canyons.fitness.utilities.Utility;
 

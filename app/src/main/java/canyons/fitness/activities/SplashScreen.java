@@ -1,4 +1,4 @@
-package canyons.fitness;
+package canyons.fitness.activities;
 
 import android.content.Intent;
 import android.graphics.PixelFormat;
@@ -12,6 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+
+import canyons.fitness.R;
 
 public class SplashScreen extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package canyons.fitness;
+package canyons.fitness.activities;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -18,6 +18,7 @@ import android.view.animation.AccelerateInterpolator;
 import android.widget.Button;
 import android.widget.EditText;
 
+import canyons.fitness.R;
 import canyons.fitness.utilities.Utility;
 
 

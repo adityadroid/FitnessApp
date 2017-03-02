@@ -6,7 +6,8 @@ import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.TextView;
 
-import aditya.thingspeak.R;
+import canyons.fitness.R;
+
 
 /**
  * Created by adi on 2/23/17.
