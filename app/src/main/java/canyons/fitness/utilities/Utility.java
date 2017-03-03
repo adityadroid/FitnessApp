@@ -6,6 +6,9 @@ import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 import canyons.fitness.R;
 
 
@@ -54,4 +57,18 @@ public class Utility {
         snackbar.show();
 
     }
+    public static String getDate(){
+        Calendar c = Calendar.getInstance();
+        System.out.println("Current time => "+c.getTime());
+
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        String formattedDate = df.format(c.getTime());
+        // formattedDate have current date/time
+       return formattedDate;
+
+    }
+    public static String getBMI(float weight, float height){
+        return (weight/(height*height))+"";
+    }
+
 }

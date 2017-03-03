@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">STATTION</string>
+    <string name="app_name">FITOCITY</string>
     <string name="login_success">login success</string>
     <string name="login">LOGIN</string>
     <string name="Username">Email</string>
@@ -38,8 +38,8 @@
     <string name="channel_id">Channel ID</string>
     <string name="channel_url">Channel URL</string>
     <string-array name="sort_array">
-        <item>My</item>
-        <item>Public</item>
+        <item>Activities</item>
+        <item>Friends</item>
     </string-array>
     <string-array name="feed_array">
         <item>Details</item>

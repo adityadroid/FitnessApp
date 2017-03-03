@@ -37,9 +37,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
     public void onBindViewHolder(RecyclerViewHolders holder, final int position) {
        //set values on holder
         holder.tvCalories.setText(itemList.get(position).getCalories());
-        holder.tvDistance.setText(itemList.get(position).getDistance());
+        holder.tvSteps.setText(itemList.get(position).getDistance());
         holder.tvDate.setText(itemList.get(position).getDate());
-        holder.tvSteps.setText(itemList.get(position).getSteps());
+        holder.tvDistance.setText(itemList.get(position).getSteps());
 
 
     }

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_view"
     android:layout_width="170dp"
-    android:layout_height="200dp"
+    android:layout_height="250dp"
     card_view:cardUseCompatPadding="true"
     android:layout_margin="8dp">
 
@@ -32,7 +32,7 @@
             android:weightSum="1"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="130dp">
+            android:layout_height="180dp">
             <LinearLayout
 
                 android:weightSum="1"
@@ -40,6 +40,12 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/activity_distance_tv"
@@ -50,9 +56,27 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:layout_weight=".5"
-                    android:text="72\nkm"
+                    android:text="72"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
+                    <TextView
+
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textSize="10dp"
+                        android:layout_weight=".5"
+                        android:text="steps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/activity_steps_tv"
@@ -63,10 +87,28 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:layout_weight=".5"
-                    android:text="72\nSteps"
+                    android:text="72"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
+                    <TextView
+
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textSize="10dp"
+                        android:layout_weight=".5"
+                        android:text="Distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
             </LinearLayout>
+            <LinearLayout
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/activity_calories_tv"
                 android:layout_gravity="center_vertical"
@@ -76,9 +118,22 @@
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:layout_weight=".5"
-                android:text="243 \nCalories"
+                android:text="243"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+                <TextView
+
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textSize="10dp"
+                    android:layout_weight=".5"
+                    android:text="Calories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </android.support.v7.widget.CardView>

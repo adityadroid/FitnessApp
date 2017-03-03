@@ -9,4 +9,6 @@
         <item>#d35400</item>
         <item>#27ae60</item>
     </array>
+    <color name="red">#d35400</color>
+    <color name="green">#27ae60</color>
 </resources>

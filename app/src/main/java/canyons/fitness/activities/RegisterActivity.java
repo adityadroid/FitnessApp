@@ -63,7 +63,7 @@ public class RegisterActivity extends AppCompatActivity {
                     getWindow().setExitTransition(explode);
                     getWindow().setEnterTransition(explode);
                     ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(RegisterActivity.this);
-                    Intent intent = new Intent(RegisterActivity.this,OTPVerifyActivity.class);
+                    Intent intent = new Intent(RegisterActivity.this,RegisterProfileActivity.class);
                     intent.putExtra("INTENT_PHONENUMBER",etMobile.getText().toString().trim());
                     intent.putExtra("INTENT_EMAIL",etEmail.getText().toString().trim());
                     intent.putExtra("INTENT_PASSWORD",etPassword.getText().toString().trim());

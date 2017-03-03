@@ -38,7 +38,7 @@ public class OTPVerifyActivity extends AppCompatActivity implements ActivityComp
     private String userEmail,userPassword,phoneNumber,countryCode;
     Button verifyOTPButton;
     Firebase fireBase;
-
+    private String userSex, userAge, userName, userHeight, userWeight;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     @Override
@@ -110,9 +110,19 @@ public class OTPVerifyActivity extends AppCompatActivity implements ActivityComp
             countryCode = "91";
             userEmail= intent.getExtras().getString("INTENT_EMAIL");
             userPassword= intent.getExtras().getString("INTENT_PASSWORD");
+            userSex= intent.getExtras().getString("INTENT_SEX");
+            userAge= intent.getExtras().getString("INTENT_AGE");
+            userName= intent.getExtras().getString("INTENT_NAME");
+            userHeight= intent.getExtras().getString("INTENT_HEIGHT");
+            userWeight= intent.getExtras().getString("INTENT_WEIGHT");
 
             Log.d("number:",phoneNumber);
-
+            Log.d("sex",userSex);
+            Log.d("age",userAge);
+            Log.d("name",userAge);
+            Log.d("userpwd",userPassword);
+            Log.d("useremail",userEmail);
+              //  registerUserToFireBase();
                 createVerification(phoneNumber, skipPermissionCheck, countryCode);
         }
     }
@@ -187,6 +197,12 @@ public class OTPVerifyActivity extends AppCompatActivity implements ActivityComp
 
                            // fireBase.child(Utility.encodeEmail(userEmail)).setValue(phoneNumber);
                             fireBase.child(mAuth.getCurrentUser().getUid()).child("mobile").setValue(phoneNumber);
+                            fireBase.child(mAuth.getCurrentUser().getUid()).child("sex").setValue(userSex);
+                            fireBase.child(mAuth.getCurrentUser().getUid()).child("age").setValue(userAge);
+                            fireBase.child(mAuth.getCurrentUser().getUid()).child("name").setValue(userName);
+                            fireBase.child(mAuth.getCurrentUser().getUid()).child("height").setValue(userHeight);
+                            fireBase.child(mAuth.getCurrentUser().getUid()).child("weight").setValue(userWeight);
+                            Log.d("mauth",mAuth.getCurrentUser().getUid());
                             Intent intent = new Intent(OTPVerifyActivity.this, HomeActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

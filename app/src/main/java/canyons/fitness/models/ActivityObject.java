@@ -6,6 +6,7 @@ package canyons.fitness.models;
 public class ActivityObject {
     public String distance, steps, calories;
     public String date;
+    public ActivityObject(){}
     public ActivityObject(String distance, String steps,String calories,String date){
         this.distance= distance;
         this.steps= steps;
@@ -13,6 +14,8 @@ public class ActivityObject {
         this.date= date;
 
     }
+
+
 
     public String getDate() {
         return date;
